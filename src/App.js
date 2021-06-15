@@ -5,7 +5,7 @@ import Admin from "./admin/Admin";
 function App() {
 	const [students, setStudents] = useState([]);
 	useEffect(() => {
-		fetch("https://mainteny-admin.herokuapp.com")
+		fetch("https://mainteny-admin.herokuapp.com/students")
 			.then((res) => res.json())
 			.then((data) => setStudents(data));
 	}, []);
