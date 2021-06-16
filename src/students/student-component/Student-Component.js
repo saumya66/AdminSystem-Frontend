@@ -21,7 +21,7 @@ const StudentComponent = (props) => {
 			`https://mainteny-admin.herokuapp.com/students/${props.id}/update`,
 			updatedUser
 		);
-		Location.reload(false);
+		window.location.reload(false);
 	};
 
 	const CourseComp = ({ course }) => {
